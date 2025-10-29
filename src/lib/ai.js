@@ -1,4 +1,31 @@
-// Placeholder AI suggestion function that references trends.json
+// ai.js
+export const generateAIResponse = async (prompt) => {
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+  const model = "gemini-2.0-flash-exp";
+
+  try {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ role: "user", parts: [{ text: prompt }] }]
+      })
+    });
+
+    const data = await response.json();
+
+    // Parse Gemini’s output
+    const text = data?.candidates?.[0]?.content?.parts?.[0]?.text || 
+                 "Sorry, I couldn’t generate a response right now.";
+    return text;
+  } catch (error) {
+    console.error("Error fetching Gemini response:", error);
+    return "Error contacting AI service. Please try again later.";
+  }
+};
+
+
+// Legacy placeholder AI suggestion function
 export async function getAiSuggestions(userBusinessText) {
   const text = (userBusinessText || '').toLowerCase().trim()
   const trends = await fetch('/trends.json').then(r => r.json()).catch(() => [])

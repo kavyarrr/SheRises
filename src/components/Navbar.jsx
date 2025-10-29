@@ -43,7 +43,7 @@ export default function Navbar() {
             <NavLink to="/explore" className={({isActive}) => `btn-secondary ${isActive ? 'ring-2 ring-pastel-lavender' : ''}`}>Explore</NavLink>
             <NavLink to="/shop" className={({isActive}) => `btn-secondary ${isActive ? 'ring-2 ring-pastel-lavender' : ''}`}>Shop</NavLink>
             <NavLink to="/community" className={({isActive}) => `btn-secondary ${isActive ? 'ring-2 ring-pastel-lavender' : ''}`}>Community</NavLink>
-            <NavLink to="/coach" className={({isActive}) => `btn-primary ${isActive ? 'ring-2 ring-pastel-pink' : ''}`}>AI Coach</NavLink>
+            <NavLink to="/chat" className={({isActive}) => `btn-primary ${isActive ? 'ring-2 ring-pastel-pink' : ''}`}>AI Coach</NavLink>
             <div className="relative" ref={profileRef}>
               <button
                 onClick={() => setShowProfile(!showProfile)}

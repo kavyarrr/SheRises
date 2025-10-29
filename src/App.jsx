@@ -9,6 +9,7 @@ import Signup from './pages/Signup'
 import Explore from './pages/Explore'
 import Profile from './pages/Profile'
 import Messages from './pages/Messages'
+import Chat from './pages/Chat'
 import HiringForm from './components/HiringForm'
 import Shop from './pages/Shop'
 
@@ -41,6 +42,7 @@ export default function App() {
           <Route path="/shop" element={<RequireAuth><Shop /></RequireAuth>} />
           <Route path="/community" element={<RequireAuth><Community /></RequireAuth>} />
           <Route path="/coach" element={<RequireAuth><Coach /></RequireAuth>} />
+          <Route path="/chat" element={<RequireAuth><Chat /></RequireAuth>} />
           <Route path="/profile/:id" element={<RequireAuth><Profile /></RequireAuth>} />
           <Route path="/messages/:id" element={<RequireAuth><Messages /></RequireAuth>} />
           <Route path="*" element={<Navigate to="/login" replace />} />

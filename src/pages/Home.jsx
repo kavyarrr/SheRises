@@ -18,7 +18,7 @@ export default function Home() {
           SheRise helps you grow your business with an AI coach, market trends, and a supportive community of women.
         </p>
         <div className="flex flex-wrap gap-4">
-          <Link to="/coach" className="btn-primary">Meet the AI Coach</Link>
+          <Link to="/chat" className="btn-primary">Meet the AI Coach</Link>
           <Link to="/community" className="btn-secondary">Explore Community</Link>
         </div>
       </div>
