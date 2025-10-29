@@ -9,6 +9,7 @@ export default function Community() {
   const [hirings, setHirings] = useState([])
   const [loading, setLoading] = useState(true)
   const [newPost, setNewPost] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('All')
 
   useEffect(() => {
     Promise.all([
@@ -130,12 +131,40 @@ export default function Community() {
               <strong>Looking for work?</strong> Browse collaboration opportunities and connect with women-led ventures. Find partners, gigs, or projects that match your skills and help your home business grow!
             </p>
           </div>
+
+          {/* Category filters */}
+          <div className="flex gap-2 overflow-x-auto pb-2">
+            <button
+              onClick={() => setSelectedCategory('All')}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition whitespace-nowrap
+                ${selectedCategory === 'All' 
+                  ? 'bg-pink-500 text-white' 
+                  : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}
+            >
+              All Opportunities
+            </button>
+            {[...new Set(hirings.map(h => h.category))].map(category => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition whitespace-nowrap
+                  ${selectedCategory === category 
+                    ? 'bg-pink-500 text-white' 
+                    : 'bg-gray-100 hover:bg-gray-200 text-gray-800'}`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
           {hirings.length === 0 ? (
             <div className="card p-6 text-center text-slate-600">
               <p>No hiring requests yet. Be the first to post one!</p>
             </div>
           ) : (
-            hirings.map(hiring => (
+            hirings
+              .filter(hiring => selectedCategory === 'All' || hiring.category === selectedCategory)
+              .map(hiring => (
               <motion.div key={hiring.id} initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} className="card p-5">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
