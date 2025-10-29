@@ -44,6 +44,8 @@ export default function Navbar() {
             <NavLink to="/shop" className={({isActive}) => `btn-secondary ${isActive ? 'ring-2 ring-pastel-lavender' : ''}`}>Shop</NavLink>
             <NavLink to="/community" className={({isActive}) => `btn-secondary ${isActive ? 'ring-2 ring-pastel-lavender' : ''}`}>Community</NavLink>
             <NavLink to="/chat" className={({isActive}) => `btn-primary ${isActive ? 'ring-2 ring-pastel-pink' : ''}`}>AI Coach</NavLink>
+            <NavLink to="/connections" className={({isActive}) => `btn-secondary ${isActive ? 'ring-2 ring-pastel-lavender' : ''}`} title="Connections">🤝 Connections</NavLink>
+
             <div className="relative flex items-center gap-2" ref={profileRef}>
               <button
                 onClick={() => navigate('/profile-setup')}
