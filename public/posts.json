@@ -1,0 +1,11 @@
+[
+  { "id": 101, "userId": 1, "content": "Launched a new collection of brass bracelets today!", "timestamp": "2025-10-29T09:00:00Z", "comments": [
+    { "userId": 2, "text": "Congrats! The designs look lovely." }
+  ]},
+  { "id": 102, "userId": 2, "content": "Experimenting with a smoky garam masala blend. Taste-testers needed!", "timestamp": "2025-10-29T12:00:00Z", "comments": [
+    { "userId": 3, "text": "Sign me up!" }
+  ]},
+  { "id": 103, "userId": 3, "content": "Switching to recyclable packaging next month. Any vendor suggestions?", "timestamp": "2025-10-28T16:30:00Z", "comments": []}
+]
+
+

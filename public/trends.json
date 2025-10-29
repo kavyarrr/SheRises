@@ -1,0 +1,9 @@
+[
+  { "name": "Minimalist Jewelry", "category": "Jewelry", "keywords": ["bracelet", "necklace", "earrings"], "momentum": "rising" },
+  { "name": "Natural Skincare", "category": "Beauty", "keywords": ["soap", "balm", "lotion"], "momentum": "hot" },
+  { "name": "Artisanal Spices", "category": "Food", "keywords": ["masala", "blend", "spice"], "momentum": "stable" },
+  { "name": "Eco Home Decor", "category": "Home", "keywords": ["terracotta", "upcycled", "planter"], "momentum": "rising" },
+  { "name": "Bento Cakes", "category": "Bakery", "keywords": ["cake", "bento", "bakery"], "momentum": "hot" }
+]
+
+

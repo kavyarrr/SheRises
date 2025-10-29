@@ -1,0 +1,27 @@
+// Placeholder AI suggestion function that references trends.json
+export async function getAiSuggestions(userBusinessText) {
+  const text = (userBusinessText || '').toLowerCase().trim()
+  const trends = await fetch('/trends.json').then(r => r.json()).catch(() => [])
+
+  const relatedTrends = trends.filter(t => text.includes(t.category.toLowerCase()) || t.keywords.some(k => text.includes(k.toLowerCase())))
+
+  const genericTips = [
+    'Define a simple weekly content plan (1 product post, 1 story, 1 customer quote).',
+    'Bundle 2+ items for a limited-time offer to increase average order value.',
+    'Ask 3 recent customers for a short testimonial; share with a photo.',
+    'Offer local delivery/pickup and mention city name in posts for discovery.'
+  ]
+
+  const trendText = relatedTrends.length
+    ? `Trending insight: ${relatedTrends.map(t => `${t.name} (${t.momentum})`).slice(0,2).join(', ')}. Consider aligning your offer or content with these.`
+    : 'No direct trends matched, but you can still ride seasonal moments and local events.'
+
+  return [
+    `I read: "${userBusinessText}"`,
+    trendText,
+    `Audience hook: Share your origin story in 3 lines and a photo.`,
+    genericTips[Math.floor(Math.random() * genericTips.length)]
+  ]
+}
+
+

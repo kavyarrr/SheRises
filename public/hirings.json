@@ -1,0 +1,39 @@
+[
+  {
+    "id": 301,
+    "userId": 1,
+    "userName": "Aisha Khan",
+    "userEmail": "aisha@example.com",
+    "title": "Clothing Company Seeking Handcraft Artisans",
+    "description": "We are an ethical clothing brand looking for skilled artisans who can create hand-embroidered motifs on fabric. We prefer working with rural artisans who have traditional embroidery skills. Looking for long-term partnerships.",
+    "category": "Embroidery",
+    "budget": "₹8,000 - ₹12,000 per piece",
+    "contact": "aisha@example.com",
+    "timestamp": "2025-10-29T10:00:00Z"
+  },
+  {
+    "id": 302,
+    "userId": 2,
+    "userName": "Neha Verma",
+    "userEmail": "neha@example.com",
+    "title": "Need Handloom Weavers for Textile Collection",
+    "description": "Our sustainable fashion brand is expanding. We need talented handloom weavers from rural areas to create unique textile patterns. Must be skilled in traditional weaving techniques.",
+    "category": "Weaving",
+    "budget": "₹15,000 - ₹25,000 per project",
+    "contact": "neha@example.com",
+    "timestamp": "2025-10-29T11:30:00Z"
+  },
+  {
+    "id": 303,
+    "userId": 3,
+    "userName": "Sara Ali",
+    "userEmail": "sara@example.com",
+    "title": "Hiring Artisan Jewelers for Accessories Line",
+    "description": "Looking for skilled jewelry makers, especially those working with traditional techniques. We want to create a collection that celebrates rural craftsmanship. Experience with brass and silver preferred.",
+    "category": "Jewelry Making",
+    "budget": "₹5,000 - ₹10,000 per design",
+    "contact": "sara@example.com",
+    "timestamp": "2025-10-28T14:00:00Z"
+  }
+]
+

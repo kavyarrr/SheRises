@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Canary yellow (#FFE66D) to soft pink (#FFD1DC) */
+  --bg-gradient: linear-gradient(135deg, #FFE66D 0%, #FFDFA8 35%, #FFD1DC 100%);
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+}
+
+.card {
+  @apply bg-white/70 backdrop-blur shadow-soft rounded-2xl border border-white/40;
+}
+
+.btn-primary {
+  @apply px-5 py-3 rounded-xl text-slate-800 shadow-soft transition-transform duration-200;
+  background: linear-gradient(135deg, #FFE66D, #FFD1DC);
+}
+
+.btn-primary:hover { transform: translateY(-2px); }
+
+.btn-secondary {
+  @apply px-5 py-3 rounded-xl text-slate-800 bg-white/70 border border-white/50 shadow-soft hover:bg-white transition;
+}
+
+
