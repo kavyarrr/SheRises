@@ -10,6 +10,7 @@ export default function Signup() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [phone, setPhone] = useState('')
+  const [website, setWebsite] = useState('')
   const [showPassword, setShowPassword] = useState(false)
   
   // Profile for Personalization
@@ -39,6 +40,8 @@ export default function Signup() {
         setFullName(data.name || data.account?.fullName || '')
         setEmail(data.email || data.account?.email || '')
         setPhone(data.phone || data.account?.phone || '')
+
+  setWebsite(data.website || data.profile?.website || '')
 
         setBusinessName(data.business || data.profile?.businessName || '')
         setCategory(data.category || data.profile?.category || '')
@@ -81,6 +84,7 @@ export default function Signup() {
       name: fullName,
       email: email,
       phone: phone || null,
+      website: website || null,
       city: cityState,
       business: businessName,
       category: category,
@@ -186,6 +190,17 @@ export default function Signup() {
                   onChange={e => setPhone(e.target.value)}
                   className="w-full rounded-xl border border-white/60 bg-white/80 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pastel-lavender"
                   placeholder="+91 1234567890"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-1">Website / Contact Link</label>
+                <input
+                  type="url"
+                  value={website}
+                  onChange={e => setWebsite(e.target.value)}
+                  className="w-full rounded-xl border border-white/60 bg-white/80 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pastel-lavender"
+                  placeholder="https://yourshop.example or https://instagram.com/yourhandle"
                 />
               </div>
             </div>

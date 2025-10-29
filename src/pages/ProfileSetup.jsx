@@ -4,6 +4,9 @@ import { motion } from 'framer-motion'
 
 export default function ProfileSetup() {
   const [userData, setUserData] = useState(null)
+  const [posts, setPosts] = useState([])
+  const [newPostText, setNewPostText] = useState('')
+  const [newPostImage, setNewPostImage] = useState(null)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -20,6 +23,12 @@ export default function ProfileSetup() {
         }
       }).catch(() => {})
     }
+
+    // load any profile-specific posts created during setup
+    try {
+      const stored = JSON.parse(localStorage.getItem('sherise_profile_posts') || '[]')
+      if (Array.isArray(stored) && stored.length) setPosts(stored)
+    } catch {}
   }, [])
 
   function handleSetUpHiring() {
@@ -127,6 +136,12 @@ export default function ProfileSetup() {
                       <div className="flex items-center gap-1">
                         <span>✉️</span>
                         <span className="text-blue-600 hover:underline cursor-pointer">{email}</span>
+                      </div>
+                    )}
+                    {userData?.website && (
+                      <div className="flex items-center gap-1">
+                        <span>🔗</span>
+                        <a href={userData.website} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">Visit Website</a>
                       </div>
                     )}
                     {stage && (
@@ -321,7 +336,70 @@ export default function ProfileSetup() {
         className="card p-6 mt-4"
       >
         <h3 className="font-semibold text-slate-800 text-xl mb-4">Activity</h3>
-        <div className="space-y-6">
+          <div className="space-y-6">
+            {/* Start a post composer (Profile setup) */}
+            <div className="border rounded-xl p-4 bg-white">
+              <div className="flex items-start gap-3">
+                <img src={userData?.avatar || '/avatar-mock.svg'} alt={name} className="w-10 h-10 rounded-full" />
+                <div className="flex-1">
+                  <textarea value={newPostText} onChange={e=>setNewPostText(e.target.value)} placeholder="Start a post to introduce your business — add an image if you like" className="w-full min-h-[72px] rounded-lg border border-white/60 bg-white/80 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pastel-lavender" />
+                  {newPostImage && (
+                    <div className="mt-2 rounded-lg overflow-hidden bg-slate-100">
+                      <img src={newPostImage} alt="preview" className="w-full h-44 object-cover" />
+                    </div>
+                  )}
+                  <div className="mt-3 flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-2">
+                      <label className="cursor-pointer px-3 py-2 bg-white/70 rounded-xl text-sm text-slate-700 hover:bg-white" title="Add image">
+                        📷 <input type="file" accept="image/*" onChange={(e)=>{
+                          const f = e.target.files && e.target.files[0]
+                          if (!f) return
+                          const reader = new FileReader()
+                          reader.onload = () => setNewPostImage(reader.result)
+                          reader.readAsDataURL(f)
+                        }} className="hidden" />
+                      </label>
+                      <button onClick={()=>{ setNewPostText(''); setNewPostImage(null); }} className="text-sm text-slate-500">Clear</button>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <button onClick={() => {
+                        // create post
+                        if (!newPostText.trim() && !newPostImage) return
+                        const currentUser = userData || { id: 999, name: 'You' }
+                        const p = { id: Date.now(), userId: currentUser.id, authorName: currentUser.name || name, content: newPostText, image: newPostImage, timestamp: new Date().toISOString() }
+                        setPosts(prev => { const next = [p, ...prev]; try { localStorage.setItem('sherise_profile_posts', JSON.stringify(next)) } catch {} ; return next })
+                        setNewPostText('')
+                        setNewPostImage(null)
+                      }} className="btn-primary px-4 py-2">Post</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Render any newly created posts first */}
+            {posts.map(p => (
+              <div key={p.id} className="border-b border-slate-200 pb-6 last:border-b-0 last:pb-0">
+                <div className="flex items-start gap-3 mb-3">
+                  <img src={userData?.avatar || '/avatar-mock.svg'} alt={p.authorName} className="w-10 h-10 rounded-full" />
+                  <div className="flex-1">
+                    <p className="font-semibold text-slate-800">{p.authorName}</p>
+                    <p className="text-xs text-slate-500">{new Date(p.timestamp).toLocaleString()}</p>
+                  </div>
+                </div>
+                <p className="text-slate-700 mb-3">{p.content}</p>
+                {p.image && (
+                  <div className="bg-slate-100 rounded-lg h-48 mb-3 overflow-hidden">
+                    <img src={p.image} alt="post" className="w-full h-full object-cover" />
+                  </div>
+                )}
+                <div className="flex items-center gap-6 text-sm text-slate-600">
+                  <button className="flex items-center gap-1 hover:text-blue-600 transition-colors">Like</button>
+                  <button className="flex items-center gap-1 hover:text-blue-600 transition-colors">Comment</button>
+                  <button className="flex items-center gap-1 hover:text-blue-600 transition-colors">Share</button>
+                </div>
+              </div>
+            ))}
           {/* Post 1 - Hiring */}
           <div className="border-b border-slate-200 pb-6 last:border-b-0 last:pb-0">
             <div className="flex items-start gap-3 mb-3">

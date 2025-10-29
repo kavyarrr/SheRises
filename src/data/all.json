@@ -6,7 +6,7 @@
     "quantity": "Box of 6",
     "business": "SweetNest Bakery",
     "description": "Rich, gooey brownies baked fresh daily.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -16,7 +16,7 @@
     "quantity": "Pack of 4",
     "business": "ButterBloom Bakes",
     "description": "Vanilla, chocolate, and red velvet cupcakes with buttercream frosting.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -26,7 +26,7 @@
     "quantity": "500g",
     "business": "BakeBelle",
     "description": "Traditional plum cake made with soaked dry fruits.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1606755962770-7e9a2f3b7a3a?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -36,7 +36,7 @@
     "quantity": "200g",
     "business": "HealthyMoms Kitchen",
     "description": "Crispy cookies made from ragi and jaggery.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1599785209790-8f8f2b1a0f2a?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -46,7 +46,7 @@
     "quantity": "Pack of 2",
     "business": "Knead & Rise",
     "description": "Soft buns with garlic butter and cheese filling.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1541592106381-2a1b5e98b1d6?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -56,7 +56,7 @@
     "quantity": "3 x 100g jars",
     "business": "Ammamma’s Kitchen",
     "description": "Mango, lemon, and chili pickles made with traditional recipes.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1606755962770-7e9a2f3b7a3a?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -66,7 +66,7 @@
     "quantity": "250g",
     "business": "Sugara Craft",
     "description": "Rich South Indian sweet made with pure ghee.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -76,7 +76,7 @@
     "quantity": "Box of 8",
     "business": "NutriNari",
     "description": "Wholesome laddoos with almonds, dates, and jaggery.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -86,7 +86,7 @@
     "quantity": "1 loaf",
     "business": "The Whisk Sisters",
     "description": "Moist banana bread with crunchy walnuts.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -96,7 +96,7 @@
     "quantity": "Set of 6 spices",
     "business": "Swaad by Seema",
     "description": "Homemade blends of garam masala, rasam, and chai spice.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -106,7 +106,7 @@
     "quantity": "Pack of 6",
     "business": "BakeBites",
     "description": "Flaky vegetable puffs baked golden brown.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -116,7 +116,7 @@
     "quantity": "200g",
     "business": "TradTreats",
     "description": "Soft coconut fudge with cardamom aroma.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -126,7 +126,7 @@
     "quantity": "200g",
     "business": "Snackify",
     "description": "Healthy mix of roasted nuts and chickpeas.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -136,7 +136,7 @@
     "quantity": "400g",
     "business": "Daily Dough",
     "description": "Freshly baked crusty sourdough loaf.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -146,7 +146,7 @@
     "quantity": "200g",
     "business": "MittiMoms",
     "description": "Nutritious cookies made from ragi flour.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {
@@ -156,7 +156,7 @@
     "quantity": "Set of 4 slices",
     "business": "CuppaCrumb",
     "description": "Soft tea cakes in assorted flavors.",
-    "image": "",
+  "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop",
     "category": "Food"
   },
   {

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
+
 import placeholderImg from '../assets/images/food.jpg'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import ConfettiBurst from '../components/ConfettiBurst'
 
 export default function Explore() {
   const [items, setItems] = useState([])
@@ -36,6 +38,7 @@ export default function Explore() {
     setLikes(prev => {
       const next = { ...prev, [id]: !prev[id] }
       localStorage.setItem('explore_likes', JSON.stringify(next))
+      // trigger confetti by setting a transient flag (handled locally per item)
       return next
     })
   }
@@ -76,7 +79,9 @@ export default function Explore() {
 
                   {/* Top-right actions */}
                   <div className="absolute top-3 right-3 flex flex-col gap-2">
-                    <button onClick={() => toggleLike(item.id)} aria-label="Like" className={`w-9 h-9 rounded-full flex items-center justify-center bg-white/80 backdrop-blur-sm shadow ${liked ? 'text-pastel-pink' : 'text-slate-700'}`}>
+                    <div className="relative">
+                      <ConfettiBurst active={liked} />
+                      <motion.button onClick={(e) => { e.stopPropagation(); toggleLike(item.id) }} aria-label="Like" initial={false} animate={liked ? { scale: [1, 1.25, 1], rotate: [0, -8, 0] } : { scale: 1, rotate: 0 }} transition={{ duration: 0.35 }} whileTap={{ scale: 0.9 }} className={`w-9 h-9 rounded-full flex items-center justify-center bg-white/80 backdrop-blur-sm shadow ${liked ? 'text-pastel-pink' : 'text-slate-700'}`}>
                       {liked ? (
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                           <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 4 4 6.5 4c1.54 0 3.04.99 3.57 2.36h.87C14.46 4.99 15.96 4 17.5 4 20 4 22 6 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -86,9 +91,9 @@ export default function Explore() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
                         </svg>
                       )}
-                    </button>
-
-                    <button onClick={() => toggleSave(item.id)} aria-label="Save" className={`w-9 h-9 rounded-full flex items-center justify-center bg-white/80 backdrop-blur-sm shadow ${isSaved ? 'text-pastel-lavender' : 'text-slate-700'}`}>
+                    </motion.button>
+                    </div>
+                    <button onClick={(e)=>{e.stopPropagation(); toggleSave(item.id)}} aria-label="Save" className={`w-9 h-9 rounded-full flex items-center justify-center bg-white/80 backdrop-blur-sm shadow ${isSaved ? 'text-pastel-lavender' : 'text-slate-700'}`}>
                       {isSaved ? (
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                           <path d="M6 2a2 2 0 00-2 2v18l8-4 8 4V4a2 2 0 00-2-2H6z" />
@@ -142,10 +147,13 @@ export default function Explore() {
                     <p className="mb-3"><strong>About the business:</strong> {selected.business || selected.title} — {selected.longDescription || selected.description || 'No extended description provided.'}</p>
                     <p className="mb-3"><strong>Owner says:</strong> {users[selected.ownerId]?.bio || 'No bio available.'}</p>
                     <p className="mb-3 text-sm text-slate-500">Contact: <a href={`mailto:${users[selected.ownerId]?.email}`} className="underline">{users[selected.ownerId]?.email}</a></p>
+                    {users[selected.ownerId]?.website && (
+                      <p className="mb-3 text-sm text-slate-500">Website: <a href={users[selected.ownerId]?.website} target="_blank" rel="noreferrer" className="underline">{users[selected.ownerId]?.website}</a></p>
+                    )}
                   </div>
 
-                  <div className="mt-4 flex items-center gap-3">
-                    <button onClick={() => { toggleLike(selected.id) }} className={`btn-primary px-4 py-2 ${likes[selected.id] ? 'bg-pastel-pink' : ''}`}>{likes[selected.id] ? 'Liked ❤️' : 'Like'}</button>
+                    <div className="mt-4 flex items-center gap-3">
+                    <motion.button onClick={() => { toggleLike(selected.id) }} initial={false} animate={likes[selected.id] ? { scale: [1, 1.2, 1] } : { scale: 1 }} transition={{ duration: 0.35 }} className={`btn-primary px-4 py-2 ${likes[selected.id] ? 'bg-pastel-pink' : ''}`}>{likes[selected.id] ? 'Liked ❤️' : 'Like'}</motion.button>
                     <button onClick={() => { toggleSave(selected.id) }} className="btn-secondary px-4 py-2">{saved[selected.id] ? 'Saved' : 'Save'}</button>
                     <button onClick={closeDetail} className="px-4 py-2 border rounded-lg">Close</button>
                   </div>

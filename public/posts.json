@@ -6,6 +6,13 @@
     { "userId": 3, "text": "Sign me up!" }
   ]},
   { "id": 103, "userId": 3, "content": "Switching to recyclable packaging next month. Any vendor suggestions?", "timestamp": "2025-10-28T16:30:00Z", "comments": []}
+,
+  { "id": 104, "userId": 1, "content": "New mini hoop set dropped — lightweight and hand-hammered.", "timestamp": "2025-10-30T08:00:00Z", "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop", "tags": ["jewelry","new"], "shortDescription": "Perfect hoops for everyday wear.", "comments": []},
+  { "id": 105, "userId": 2, "content": "Small-batch turmeric granola now available — sample boxes this weekend!", "timestamp": "2025-10-30T10:00:00Z", "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop", "tags": ["food","baked"], "shortDescription": "Golden, crunchy, cozy.", "comments": [{ "userId": 1, "text": "Sounds delicious!" }]},
+  { "id": 106, "userId": 3, "content": "Chamomile night balm restock — perfect for gifting.", "timestamp": "2025-10-29T20:00:00Z", "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop", "tags": ["wellness","skincare"], "shortDescription": "Calming balm for bedtime rituals.", "comments": []},
+  { "id": 107, "userId": 1, "content": "Made a how-to reel for cleaning brass jewelry — saved me so much time!", "timestamp": "2025-10-27T14:00:00Z", "image": "https://images.unsplash.com/photo-1516637090014-cb1ab0d08fc7?q=80&w=1200&auto=format&fit=crop", "tags": ["tips","jewelry"], "shortDescription": "Quick maintenance tips.", "comments": []},
+  { "id": 108, "userId": 2, "content": "Selling mini masala gift sets — perfect for Diwali boxes.", "timestamp": "2025-10-25T09:30:00Z", "image": "https://images.unsplash.com/photo-1604908554049-096d3b3f315a?q=80&w=1200&auto=format&fit=crop", "tags": ["gifts","spices"], "shortDescription": "Curated flavour samplers.", "comments": []},
+  { "id": 109, "userId": 3, "content": "Oat & honey soap is selling out — thank you for the support!", "timestamp": "2025-10-24T16:00:00Z", "image": "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1200&auto=format&fit=crop", "tags": ["soap","natural"], "shortDescription": "Gentle, nourishing bars.", "comments": [{ "userId": 2, "text": "Ordering another batch!" }]}
 ]
 
 

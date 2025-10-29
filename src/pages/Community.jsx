@@ -1,6 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import placeholderImg from '../assets/images/food.jpg'
+import ConfettiBurst from '../components/ConfettiBurst'
 
 export default function Community() {
   const [activeTab, setActiveTab] = useState('feed')
@@ -10,6 +12,8 @@ export default function Community() {
   const [loading, setLoading] = useState(true)
   const [newPost, setNewPost] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('All')
+  const [likes, setLikes] = useState({})
+  const [confettiActive, setConfettiActive] = useState(null)
 
   useEffect(() => {
     Promise.all([
@@ -45,6 +49,12 @@ export default function Community() {
     }
     window.addEventListener('openHiringForm', handleOpenHiringForm)
 
+    // load likes for community posts
+    try {
+      const l = JSON.parse(localStorage.getItem('sherise_post_likes') || '{}')
+      setLikes(l)
+    } catch {}
+
     return () => {
       window.removeEventListener('hiringUpdated', handleHiringUpdate)
       window.removeEventListener('openHiringForm', handleOpenHiringForm)
@@ -64,6 +74,20 @@ export default function Community() {
     const currentUser = users[0] || { id: 999, name: 'You' }
     setPosts(prev => [{ id: Date.now(), userId: currentUser.id, content: newPost, timestamp: new Date().toISOString(), comments: [] }, ...prev])
     setNewPost('')
+  }
+
+  function toggleLike(postId) {
+    setLikes(prev => {
+      const next = { ...prev, [postId]: !prev[postId] }
+      localStorage.setItem('sherise_post_likes', JSON.stringify(next))
+
+      // trigger a short confetti burst when the post is liked
+      if (next[postId]) {
+        setConfettiActive(postId)
+        setTimeout(() => setConfettiActive(null), 900)
+      }
+      return next
+    })
   }
 
   return (
@@ -94,32 +118,49 @@ export default function Community() {
             <textarea value={newPost} onChange={e => setNewPost(e.target.value)} placeholder="Share an update…" className="w-full rounded-xl border border-white/60 bg-white/80 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pastel-lavender"></textarea>
             <div className="mt-3 flex justify-end"><button onClick={addPost} className="btn-primary">Post</button></div>
           </div>
-          <div className="space-y-4">
+          <div className="grid sm:grid-cols-2 gap-4">
             {posts.map(post => {
               const author = usersMap[post.userId]
+              const image = post.image || author?.gallery?.[0] || placeholderImg
+              const liked = !!likes[post.id]
               return (
-                <motion.div key={post.id} initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} className="card p-4">
-                  <div className="flex items-center gap-3">
-                    <Link to={`/profile/${author?.id}`}><img src={author?.avatar} alt={author?.name} className="w-10 h-10 rounded-full border border-white/60" /></Link>
-                    <div>
-                      <Link to={`/profile/${author?.id}`} className="font-semibold text-slate-800 hover:underline">{author?.name}</Link>
-                      <p className="text-xs text-slate-600">{new Date(post.timestamp).toLocaleString()}</p>
+                <motion.article key={post.id} initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} className="rounded-2xl overflow-hidden shadow-lg bg-white">
+                  <div className="relative">
+                    <img src={image} onError={(e)=>{e.currentTarget.src = placeholderImg}} alt={post.content.slice(0,40)} className="w-full h-44 object-cover" />
+                    <div className="absolute left-3 top-3 bg-white/80 rounded-full p-1">
+                      <Link to={`/profile/${author?.id}`}><img src={author?.avatar} onError={(e)=>{e.currentTarget.src = placeholderImg}} alt={author?.name} className="w-9 h-9 rounded-full border" /></Link>
                     </div>
-                  </div>
-                  <p className="mt-3 text-slate-800 whitespace-pre-wrap">{post.content}</p>
-                  <div className="mt-3 border-t border-white/50 pt-3">
-                    <h4 className="text-sm font-medium text-slate-700 mb-2">Comments</h4>
-                    <div className="space-y-2">
-                      {post.comments.map((c, idx) => (
-                        <div key={idx} className="flex items-start gap-2">
-                          <img src={usersMap[c.userId]?.avatar} alt="" className="w-6 h-6 rounded-full border border-white/60 mt-1" />
-                          <div className="bg-white/70 rounded-lg px-3 py-2 text-sm text-slate-800"><span className="font-medium">{usersMap[c.userId]?.name}:</span> {c.text}</div>
+                    <div className="absolute right-3 top-3 flex gap-2">
+                          <div className="relative">
+                            <motion.button onClick={() => toggleLike(post.id)} initial={false} animate={liked ? { scale: [1, 1.25, 1] } : { scale: 1 }} transition={{ duration: 0.35 }} whileTap={{ scale: 0.9 }} className={`w-9 h-9 rounded-full flex items-center justify-center ${liked ? 'bg-pink-200 text-pink-600' : 'bg-white/80'}`}>❤</motion.button>
+                            <div className="pointer-events-none absolute -right-1 -top-1">
+                              <ConfettiBurst active={confettiActive === post.id} />
+                            </div>
+                          </div>
+                          <Link to={`/messages/${author?.id}`} className="w-9 h-9 rounded-full bg-white/80 flex items-center justify-center">✉️</Link>
                         </div>
-                      ))}
-                    </div>
-                    <CommentBox onSubmit={(text) => addComment(post.id, text)} />
                   </div>
-                </motion.div>
+
+                  <div className="p-4">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <Link to={`/profile/${author?.id}`} className="font-semibold text-slate-800 hover:underline">{author?.name}</Link>
+                        <div className="text-xs text-slate-500">{new Date(post.timestamp).toLocaleString()}</div>
+                      </div>
+                      <div className="text-sm text-slate-600">{post.tags ? post.tags.map(t => <span key={t} className="ml-2 text-xs bg-gray-100 px-2 py-1 rounded">#{t}</span>) : null}</div>
+                    </div>
+
+                    <p className="mt-3 text-slate-800">{post.content}</p>
+                    {post.shortDescription && <p className="mt-2 text-sm text-slate-600">{post.shortDescription}</p>}
+
+                    <div className="mt-4 flex items-center justify-between">
+                      <div className="flex items-center gap-2 text-sm text-slate-600">{(post.comments||[]).length} comments • {liked ? 'You liked this' : ''}</div>
+                      <div>
+                        <CommentBox onSubmit={(text) => addComment(post.id, text)} />
+                      </div>
+                    </div>
+                  </div>
+                </motion.article>
               )
             })}
           </div>

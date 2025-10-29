@@ -89,7 +89,7 @@ export default function TrendChart() {
         </div>
       </div>
 
-      <div className="w-full h-56 md:h-72">
+      <div className="w-full h-36 md:h-44">
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <defs>

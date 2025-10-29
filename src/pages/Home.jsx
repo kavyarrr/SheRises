@@ -299,7 +299,7 @@ export default function Home() {
               <div className="text-6xl mb-4">🤖</div>
               <h3 className="text-2xl font-semibold text-slate-800 mb-3">AI Coach</h3>
               <p className="text-slate-700 mb-4">Get personalized business advice, strategy tips, and growth insights powered by AI.</p>
-              <Link to="/coach" className="btn-primary">Try AI Coach</Link>
+              <Link to="/chat" className="btn-primary">Try AI Coach</Link>
             </motion.div>
 
       <motion.div

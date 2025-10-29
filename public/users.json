@@ -5,12 +5,14 @@
     "city": "Lahore",
     "business": "Handmade Jewelry",
     "bio": "I design minimalist jewelry with a cultural twist, using brass and recycled metals. My mission is to create pieces that feel personal, timeless, and planet-friendly.",
-    "avatar": "https://i.pravatar.cc/100?img=5",
+  "avatar": "https://randomuser.me/api/portraits/women/1.jpg",
     "gallery": [
       "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1516637090014-cb1ab0d08fc7?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1490111718993-d98654ce6cf7?q=80&w=800&auto=format&fit=crop"
     ]
+    ,
+    "website": "https://sherise.example/users/1"
   },
   {
     "id": 2,
@@ -18,12 +20,14 @@
     "city": "Jaipur",
     "business": "Organic Spices",
     "bio": "From family kitchens to your table — small-batch spice blends ground weekly for freshness. I source directly from trusted farms.",
-    "avatar": "https://i.pravatar.cc/100?img=8",
+  "avatar": "https://randomuser.me/api/portraits/women/2.jpg",
     "gallery": [
       "https://images.unsplash.com/photo-1615485737651-6e539f2d2f1f?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1543340713-8c9d08e8d3a0?q=80&w=800&auto=format&fit=crop"
     ]
+    ,
+    "website": "https://sherise.example/users/2"
   },
   {
     "id": 3,
@@ -31,12 +35,150 @@
     "city": "Delhi",
     "business": "Natural Soaps",
     "bio": "I handcraft cold-process soaps with botanicals and essential oils. Gentle on skin, gentle on Earth.",
-    "avatar": "https://i.pravatar.cc/100?img=12",
+  "avatar": "https://randomuser.me/api/portraits/women/3.jpg",
     "gallery": [
       "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1516685018646-549198525c1b?q=80&w=800&auto=format&fit=crop"
     ]
+    ,
+    "website": "https://sherise.example/users/3"
+  }
+  ,
+  {
+    "id": 4,
+    "name": "Priya Sharma",
+    "city": "Mumbai",
+    "business": "Handloom Scarves",
+    "bio": "Weaving artisanal scarves using natural dyes and traditional looms. Each piece tells a region's story.",
+  "avatar": "https://randomuser.me/api/portraits/women/4.jpg",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503342452485-86f8b63b8671?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1514995669114-3a4d7f5f0d6b?q=80&w=800&auto=format&fit=crop"
+    ]
+    ,
+    "website": "https://sherise.example/users/4"
+  },
+  {
+    "id": 5,
+    "name": "Kavita Rao",
+    "city": "Bengaluru",
+    "business": "Ceramic Homeware",
+    "bio": "Functional ceramics with minimalist shapes — dishwasher-safe pieces made in small batches.",
+  "avatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "gallery": [
+      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1541542684-7f8d8f9d6b1f?q=80&w=800&auto=format&fit=crop"
+    ]
+    ,
+    "website": "https://sherise.example/users/5"
+  },
+  {
+    "id": 6,
+    "name": "Meena Gupta",
+    "city": "Kolkata",
+    "business": "Artisanal Chocolates",
+    "bio": "Bean-to-bar chocolates flavored with local ingredients like masala chai and jaggery.",
+  "avatar": "https://randomuser.me/api/portraits/women/6.jpg",
+    "gallery": [
+      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop"
+    ]
+    ,
+    "website": "https://sherise.example/users/6"
+  },
+  {
+    "id": 7,
+    "name": "Rani Das",
+    "city": "Chennai",
+    "business": "Kids' Clothing",
+    "bio": "Soft, organic cotton clothes for little ones, designed with comfort and playful patterns in mind.",
+  "avatar": "https://randomuser.me/api/portraits/women/7.jpg",
+    "gallery": [
+      "https://images.unsplash.com/photo-1504868584819-f8e0420f9a1b?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?q=80&w=800&auto=format&fit=crop"
+    ]
+    ,
+    "website": "https://sherise.example/users/7"
+  },
+  {
+    "id": 8,
+    "name": "Lina Fernandez",
+    "city": "Goa",
+    "business": "Small-batch Coffee",
+    "bio": "Roasting single-origin coffees sourced from small growers; we roast to order for maximum freshness.",
+  "avatar": "https://randomuser.me/api/portraits/women/8.jpg",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1509460913899-7be63b6b0c6d?q=80&w=800&auto=format&fit=crop"
+    ]
+    ,
+    "website": "https://sherise.example/users/8"
+  },
+  {
+    "id": 9,
+    "name": "Zara Khan",
+    "city": "Hyderabad",
+    "business": "Beauty & Skincare",
+    "bio": "Plant-powered skincare formulated for sensitive skin — cruelty-free and thoughtfully packaged.",
+  "avatar": "https://randomuser.me/api/portraits/women/9.jpg",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519985176271-adb1088fa94c?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1549492425-6d01c0a3d3a6?q=80&w=800&auto=format&fit=crop"
+    ]
+    ,
+    "website": "https://sherise.example/users/9"
+  },
+  {
+    "id": 10,
+    "name": "Fatima Noor",
+    "city": "Pune",
+    "business": "Stationery & Journals",
+    "bio": "Handbound journals and curated stationery sets for creative minds and small businesses.",
+  "avatar": "https://randomuser.me/api/portraits/women/10.jpg",
+    "gallery": [
+      "https://images.unsplash.com/photo-1496317556649-f930d733eea2?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=800&auto=format&fit=crop"
+    ]
+    ,
+    "website": "https://sherise.example/users/10"
+  },
+  {
+    "id": 11,
+    "name": "Anita Mehta",
+    "city": "Ahmedabad",
+    "business": "Pickles & Preserves",
+    "bio": "Family recipes for tangy pickles and fruit preserves made with seasonal local produce.",
+  "avatar": "https://randomuser.me/api/portraits/women/11.jpg",
+    "gallery": [
+      "https://images.unsplash.com/photo-1506354666786-959d6d497f1a?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?q=80&w=800&auto=format&fit=crop"
+    ]
+    ,
+    "website": "https://sherise.example/users/11"
+  },
+  {
+    "id": 12,
+    "name": "Maya Patel",
+    "city": "Surat",
+    "business": "Bridal Accessories",
+    "bio": "Delicate handmade accessories for brides — combining traditional techniques with modern taste.",
+  "avatar": "https://randomuser.me/api/portraits/women/12.jpg",
+    "gallery": [
+      "https://images.unsplash.com/photo-1520975916070-5a9f7b5b7a8f?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1515548215059-64e5e0d1d4b1?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1495121605193-b116b5b09f0b?q=80&w=800&auto=format&fit=crop"
+    ]
+    ,
+    "website": "https://sherise.example/users/12"
   }
 ]
 

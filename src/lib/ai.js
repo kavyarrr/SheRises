@@ -3,6 +3,11 @@ export const generateAIResponse = async (prompt) => {
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
   const model = "gemini-2.0-flash-exp";
 
+  // If no API key is configured, return a helpful fallback so the UI remains usable
+  if (!apiKey) {
+    return `I don't have access to the AI service in this environment. Try setting VITE_GEMINI_API_KEY in your .env for better answers — meanwhile, here's a starter tip:\n\n• Define your top 3 products and one sentence value proposition.\n• Post one photo + one customer quote each week.`
+  }
+
   try {
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
       method: "POST",
