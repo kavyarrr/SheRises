@@ -30,8 +30,28 @@ export default function Signup() {
   ]
 
   useEffect(() => {
-    const isAuthed = localStorage.getItem('sherise_auth') === 'true'
-    if (isAuthed) navigate('/')
+    // If user is already logged in, prefill the form for editing their profile
+    const stored = localStorage.getItem('sherise_current_user')
+    if (stored) {
+      try {
+        const data = JSON.parse(stored)
+        // Handle both flat structure (from users.json) and nested structure
+        setFullName(data.name || data.account?.fullName || '')
+        setEmail(data.email || data.account?.email || '')
+        setPhone(data.phone || data.account?.phone || '')
+
+        setBusinessName(data.business || data.profile?.businessName || '')
+        setCategory(data.category || data.profile?.category || '')
+        setExperience(data.experience || data.profile?.experience || '')
+        setCityState(data.city || data.profile?.cityState || '')
+        setBusinessStage(data.stage || data.profile?.businessStage || '')
+        setGoals(data.goals || data.profile?.goals || [])
+        setBio(data.bio || data.profile?.bio || '')
+
+        // keep editing id in state via a hidden variable on submit
+        // if no stored current user, leave as signup flow
+      } catch {}
+    }
   }, [navigate])
 
   function handleGoalToggle(goal) {
@@ -45,38 +65,58 @@ export default function Signup() {
   function handleSignup(e) {
     e.preventDefault()
     
-    const signupData = {
-      id: Date.now(),
-      timestamp: new Date().toISOString(),
-      account: {
-        fullName,
-        email,
-        phone: phone || null,
-        // Note: In real app, password should be hashed!
-      },
-      profile: {
-        businessName,
-        category,
-        experience,
-        cityState,
-        businessStage,
-        goals,
-        bio: bio || null
-      }
+    // Get current user if editing
+    let currentUserId = null
+    const current = localStorage.getItem('sherise_current_user')
+    if (current) {
+      try {
+        const parsed = JSON.parse(current)
+        currentUserId = parsed.id
+      } catch {}
     }
 
-    // Store in localStorage as JSON
+    // Build the updated user object - use flat structure like users.json
+    const signupData = {
+      id: currentUserId || Date.now(),
+      name: fullName,
+      email: email,
+      phone: phone || null,
+      city: cityState,
+      business: businessName,
+      category: category,
+      experience: experience,
+      stage: businessStage,
+      goals: goals,
+      bio: bio || '',
+      avatar: '/avatar-mock.svg', // Use mock avatar
+      gallery: [] // Can be updated later
+    }
+
+    // Update localStorage users list
     const existingUsers = JSON.parse(localStorage.getItem('sherise_users') || '[]')
-    existingUsers.push(signupData)
-    localStorage.setItem('sherise_users', JSON.stringify(existingUsers))
+    const idx = existingUsers.findIndex(u => String(u.id) === String(signupData.id))
     
-    // Auto-login after signup
+    if (idx >= 0) {
+      // Update existing user
+      existingUsers[idx] = signupData
+      console.log('✅ Updated existing profile:', signupData.id)
+    } else {
+      // Add new user
+      existingUsers.push(signupData)
+      console.log('✅ Created new profile:', signupData.id)
+    }
+
+    // Persist
+    localStorage.setItem('sherise_users', JSON.stringify(existingUsers))
     localStorage.setItem('sherise_auth', 'true')
     localStorage.setItem('sherise_user_name', fullName)
     localStorage.setItem('sherise_user_email', email)
     localStorage.setItem('sherise_current_user', JSON.stringify(signupData))
-    
-    navigate('/')
+
+    console.log('✅ Saved to localStorage. Navigating to /profile-setup')
+
+    // Navigate to the profile setup page
+    navigate('/profile-setup')
   }
 
   return (
@@ -257,7 +297,7 @@ export default function Signup() {
             </div>
           </div>
 
-          <button type="submit" className="btn-primary w-full mt-6">Create Account</button>
+          <button type="submit" className="btn-primary w-full mt-6">{localStorage.getItem('sherise_current_user') ? 'Save Changes' : 'Create Account'}</button>
         </form>
 
         <p className="mt-4 text-center text-sm text-slate-600">

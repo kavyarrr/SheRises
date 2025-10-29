@@ -10,6 +10,8 @@ import Explore from './pages/Explore'
 import Profile from './pages/Profile'
 import Messages from './pages/Messages'
 import Chat from './pages/Chat'
+import Profiles from './pages/Profiles'
+import ProfileSetup from './pages/ProfileSetup'
 import HiringForm from './components/HiringForm'
 import Shop from './pages/Shop'
 
@@ -43,6 +45,9 @@ export default function App() {
           <Route path="/community" element={<RequireAuth><Community /></RequireAuth>} />
           <Route path="/coach" element={<RequireAuth><Coach /></RequireAuth>} />
           <Route path="/chat" element={<RequireAuth><Chat /></RequireAuth>} />
+          <Route path="/profiles" element={<RequireAuth><Profiles /></RequireAuth>} />
+          <Route path="/profile-setup" element={<RequireAuth><ProfileSetup /></RequireAuth>} />
+          <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />
           <Route path="/profile/:id" element={<RequireAuth><Profile /></RequireAuth>} />
           <Route path="/messages/:id" element={<RequireAuth><Messages /></RequireAuth>} />
           <Route path="*" element={<Navigate to="/login" replace />} />
