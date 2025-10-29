@@ -29,6 +29,16 @@ export default function ProfileDropdown({ isOpen, onClose, onLogout }) {
     navigate('/signup')
   }
 
+  function goToProfiles() {
+    onClose()
+    navigate('/profiles')
+  }
+
+  function goToProfileSetup() {
+    onClose()
+    navigate('/profile-setup')
+  }
+
   if (!isOpen) return null
 
   return (
@@ -54,6 +64,8 @@ export default function ProfileDropdown({ isOpen, onClose, onLogout }) {
             )}
 
             <div className="border-t border-white/50 pt-3 space-y-2">
+              <button onClick={goToProfileSetup} className="w-full btn-secondary text-left">Profile Setup</button>
+              <button onClick={goToProfiles} className="w-full btn-secondary text-left">View Profiles</button>
               <button onClick={handleSetUpHiring} className="w-full btn-secondary text-left">Set up hire request</button>
               <button onClick={goToSignup} className="w-full btn-secondary text-left">Add business</button>
               <button onClick={goToSignup} className="w-full btn-secondary text-left">Edit profile</button>

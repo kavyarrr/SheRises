@@ -44,12 +44,22 @@ export default function Navbar() {
             <NavLink to="/shop" className={({isActive}) => `btn-secondary ${isActive ? 'ring-2 ring-pastel-lavender' : ''}`}>Shop</NavLink>
             <NavLink to="/community" className={({isActive}) => `btn-secondary ${isActive ? 'ring-2 ring-pastel-lavender' : ''}`}>Community</NavLink>
             <NavLink to="/chat" className={({isActive}) => `btn-primary ${isActive ? 'ring-2 ring-pastel-pink' : ''}`}>AI Coach</NavLink>
-            <div className="relative" ref={profileRef}>
+            <div className="relative flex items-center gap-2" ref={profileRef}>
               <button
-                onClick={() => setShowProfile(!showProfile)}
+                onClick={() => navigate('/profile-setup')}
                 className="w-10 h-10 rounded-full bg-pastel-lavender text-slate-800 font-semibold flex items-center justify-center hover:ring-2 ring-pastel-pink transition"
+                title="Profile Setup"
+                aria-label="Profile Setup"
               >
                 {initials}
+              </button>
+              <button
+                onClick={() => setShowProfile(v => !v)}
+                className="px-3 h-10 rounded-xl bg-white/70 border border-white/50 shadow-soft text-slate-700 hover:bg-white transition"
+                aria-label="Open menu"
+                title="Open menu"
+              >
+                ⋯
               </button>
               <ProfileDropdown isOpen={showProfile} onClose={() => setShowProfile(false)} onLogout={handleLogout} />
             </div>
