@@ -1,0 +1,11 @@
+[
+    {"id":1,"name":"Handmade Jute Basket","price":"₹350","quantity":"1 piece","business":"ThreadTales Studio","description":"Eco-friendly jute basket for home storage.","image":""},
+    {"id":2,"name":"Terracotta Clay Lamps","price":"₹280","quantity":"Set of 2","business":"EarthEcho","description":"Hand-painted traditional diyas made of clay.","image":""},
+    {"id":3,"name":"Macramé Wall Hanging","price":"₹550","quantity":"1 piece","business":"KnotKraft","description":"Boho-style macramé wall art with cotton threads.","image":""},
+    {"id":4,"name":"Crochet Coasters","price":"₹200","quantity":"Set of 4","business":"ThreadTales Studio","description":"Colorful crochet coasters handcrafted with care.","image":""},
+    {"id":5,"name":"Paper Quilling Earrings","price":"₹180","quantity":"1 pair","business":"CraftyCharm","description":"Lightweight eco earrings made from rolled paper.","image":""},
+    {"id":6,"name":"Bamboo Pen Stand","price":"₹220","quantity":"1 piece","business":"EarthEcho","description":"Sustainable bamboo pen holder handcrafted locally.","image":""},
+    {"id":7,"name":"Resin Keychains","price":"₹150","quantity":"Pack of 2","business":"ShineMould","description":"Custom resin art keychains with pressed flowers.","image":""},
+    {"id":8,"name":"Mini Canvas Painting","price":"₹250","quantity":"1 piece","business":"ColorNest","description":"Cute mini canvas artwork for desks or gifts.","image":""}
+  ]
+  

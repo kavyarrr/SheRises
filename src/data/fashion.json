@@ -1,0 +1,21 @@
+[
+    {"id":1,"name":"Handwoven Cotton Saree","price":"₹1200","quantity":"1 piece","business":"LoomLadki","description":"Elegant saree handwoven by rural artisans.","image":""},
+    {"id":2,"name":"Block Printed Kurti","price":"₹800","quantity":"1 piece","business":"RangRiwaaz","description":"Cotton kurti with traditional block prints.","image":""},
+    {"id":3,"name":"Beaded Necklace Set","price":"₹450","quantity":"1 set","business":"CraftyCharm","description":"Colorful bead jewelry handmade by women.","image":""},
+    {"id":4,"name":"Jute Handbag","price":"₹600","quantity":"1 bag","business":"EcoBelle","description":"Sustainable tote bag made from jute fabric.","image":""},
+    {"id":5,"name":"Silk Dupatta","price":"₹950","quantity":"1 piece","business":"RangRiwaaz","description":"Hand-dyed silk dupatta with zari borders.","image":""},
+    {"id":6,"name":"Cotton Wrap Skirt","price":"₹700","quantity":"1 piece","business":"ThreadTales Studio","description":"Casual wrap skirt with floral motifs.","image":""},
+    {"id":7,"name":"Silver Toe Rings","price":"₹300","quantity":"Pair","business":"JewelNest","description":"Traditional handcrafted silver jewelry.","image":""},
+    {"id":8,"name":"Handmade Hairbands","price":"₹180","quantity":"Set of 2","business":"StitchBloom","description":"Fabric hairbands with bow design.","image":""},
+    {"id":9,"name":"Crochet Earrings","price":"₹200","quantity":"1 pair","business":"KnotKraft","description":"Light handmade earrings from crochet threads.","image":""},
+    {"id":10,"name":"Ethnic Potli Bags","price":"₹350","quantity":"1 piece","business":"EcoBelle","description":"Festive potli bags with mirror work.","image":""},
+    {"id":11,"name":"Printed Cotton Dress","price":"₹950","quantity":"1 piece","business":"LoomLadki","description":"Flowy dress made from organic cotton.","image":""},
+    {"id":12,"name":"Anklet Set","price":"₹280","quantity":"Pair","business":"JewelNest","description":"Delicate oxidized anklets with charms.","image":""},
+    {"id":13,"name":"Woolen Shawl","price":"₹1100","quantity":"1 piece","business":"LoomLadki","description":"Soft handwoven shawl for winters.","image":""},
+    {"id":14,"name":"Denim Sling Bag","price":"₹550","quantity":"1 piece","business":"StitchBloom","description":"Upcycled denim sling bag with patch design.","image":""},
+    {"id":15,"name":"Terracotta Necklace","price":"₹400","quantity":"1 piece","business":"CraftyCharm","description":"Hand-painted terracotta jewelry.","image":""},
+    {"id":16,"name":"Cotton Dupatta Set","price":"₹700","quantity":"1 piece","business":"RangRiwaaz","description":"Soft cotton dupatta in pastel shades.","image":""},
+    {"id":17,"name":"Fabric Earrings","price":"₹150","quantity":"1 pair","business":"StitchBloom","description":"Colorful earrings made from fabric scraps.","image":""},
+    {"id":18,"name":"Hand-painted Scarf","price":"₹600","quantity":"1 piece","business":"ColorNest","description":"Light scarf with hand-painted floral art.","image":""}
+  ]
+  

@@ -1,0 +1,13 @@
+[
+    {"id":1,"name":"Aloe Vera Gel","price":"₹180","quantity":"100ml","business":"GlowGrove Naturals","description":"Pure aloe vera gel for soothing and hydration.","image":""},
+    {"id":2,"name":"Rose Lip Balm","price":"₹120","quantity":"15g","business":"PetalPop","description":"Handmade lip balm with rose oil and shea butter.","image":""},
+    {"id":3,"name":"Turmeric Face Pack","price":"₹200","quantity":"100g","business":"AyuraBlend","description":"Natural face mask to brighten and even skin tone.","image":""},
+    {"id":4,"name":"Coconut Hair Oil","price":"₹250","quantity":"200ml","business":"GlowGrove Naturals","description":"Cold-pressed coconut oil for hair nourishment.","image":""},
+    {"id":5,"name":"Lavender Soap Bar","price":"₹150","quantity":"100g","business":"PureScents Studio","description":"Handcrafted soap infused with lavender essential oil.","image":""},
+    {"id":6,"name":"Neem & Tulsi Face Wash","price":"₹220","quantity":"100ml","business":"AyuraBlend","description":"Herbal cleanser for acne-prone skin.","image":""},
+    {"id":7,"name":"Coffee Body Scrub","price":"₹300","quantity":"200g","business":"BeanBloom Beauty","description":"Exfoliating scrub with natural coffee and coconut oil.","image":""},
+    {"id":8,"name":"Rose Water Toner","price":"₹180","quantity":"100ml","business":"PetalPop","description":"Refreshing rose toner for all skin types.","image":""},
+    {"id":9,"name":"Shea Butter Cream","price":"₹280","quantity":"100g","business":"PureScents Studio","description":"Moisturizing cream for dry skin with natural shea.","image":""},
+    {"id":10,"name":"Amla Hair Serum","price":"₹320","quantity":"100ml","business":"GlowGrove Naturals","description":"Lightweight serum for shine and strength.","image":""}
+  ]
+  

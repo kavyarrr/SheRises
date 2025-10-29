@@ -1,0 +1,23 @@
+[
+    {"id":1,"name":"Herbal Green Tea Blend","price":"₹300","quantity":"100g","business":"TeaLeaf Tales","description":"Relaxing tea mix with tulsi and lemongrass.","image":""},
+    {"id":2,"name":"Aromatherapy Candle","price":"₹350","quantity":"1 jar","business":"AuraHome Studio","description":"Scented candle to calm and uplift mood.","image":""},
+    {"id":3,"name":"Yoga Mat Cleaner Spray","price":"₹200","quantity":"100ml","business":"WellNest","description":"Natural antibacterial spray for yoga mats.","image":""},
+    {"id":4,"name":"Sleep Pillow Mist","price":"₹280","quantity":"50ml","business":"CalmCraft","description":"Lavender mist to promote restful sleep.","image":""},
+    {"id":5,"name":"Herbal Bath Salts","price":"₹250","quantity":"200g","business":"PureScents Studio","description":"Soothing Epsom salt mix with essential oils.","image":""},
+    {"id":6,"name":"Copper Water Bottle","price":"₹800","quantity":"1 piece","business":"EcoBelle","description":"Pure copper bottle for daily wellness routine.","image":""},
+    {"id":7,"name":"Chamomile Tea","price":"₹280","quantity":"50g","business":"TeaLeaf Tales","description":"Organic chamomile flowers for relaxation.","image":""},
+    {"id":8,"name":"Aloe Vera Juice","price":"₹200","quantity":"500ml","business":"NutriNari","description":"Cold-pressed aloe juice for digestion and skin.","image":""},
+    {"id":9,"name":"Body Massage Oil","price":"₹350","quantity":"100ml","business":"AyuraBlend","description":"Blend of almond and sandalwood oils.","image":""},
+    {"id":10,"name":"Scented Eye Pillow","price":"₹300","quantity":"1 piece","business":"CalmCraft","description":"Lavender-filled eye pillow for stress relief.","image":""},
+    {"id":11,"name":"Green Clay Mask","price":"₹220","quantity":"100g","business":"The Clay Bar","description":"Mineral-rich mask for detox and glow.","image":""},
+    {"id":12,"name":"Organic Honey","price":"₹400","quantity":"250g","business":"BeeBloom Farms","description":"Raw, unfiltered honey harvested locally.","image":""},
+    {"id":13,"name":"Herbal Detox Pack","price":"₹350","quantity":"3 sachets","business":"WellNest","description":"Daily detox kit with herbs and teas.","image":""},
+    {"id":14,"name":"Lemongrass Essential Oil","price":"₹180","quantity":"15ml","business":"PureScents Studio","description":"Essential oil for aromatherapy and massage.","image":""},
+    {"id":15,"name":"Yoga Headband Set","price":"₹250","quantity":"Set of 2","business":"StitchBloom","description":"Soft cotton stretch bands for workouts.","image":""},
+    {"id":16,"name":"Herbal Foot Soak","price":"₹220","quantity":"150g","business":"CalmCraft","description":"Relaxing soak with Epsom salt and mint leaves.","image":""},
+    {"id":17,"name":"Copper Tongue Cleaner","price":"₹150","quantity":"1 piece","business":"EcoBelle","description":"Traditional tongue cleaner made from pure copper.","image":""},
+    {"id":18,"name":"Organic Chia Seeds","price":"₹180","quantity":"200g","business":"NutriNari","description":"High-protein superfood for healthy meals.","image":""},
+    {"id":19,"name":"Stress Relief Balm","price":"₹200","quantity":"25g","business":"AyuraBlend","description":"Herbal balm with eucalyptus and menthol.","image":""},
+    {"id":20,"name":"Flaxseed Energy Mix","price":"₹300","quantity":"200g","business":"NutriNari","description":"Healthy mix of flax, sunflower, and chia seeds.","image":""}
+  ]
+  

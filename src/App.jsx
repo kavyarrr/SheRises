@@ -10,6 +10,7 @@ import Explore from './pages/Explore'
 import Profile from './pages/Profile'
 import Messages from './pages/Messages'
 import HiringForm from './components/HiringForm'
+import Shop from './pages/Shop'
 
 function RequireAuth({ children }) {
   const isAuthed = typeof window !== 'undefined' && localStorage.getItem('sherise_auth') === 'true'
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/" element={<RequireAuth><Home /></RequireAuth>} />
           <Route path="/explore" element={<RequireAuth><Explore /></RequireAuth>} />
+          <Route path="/shop" element={<RequireAuth><Shop /></RequireAuth>} />
           <Route path="/community" element={<RequireAuth><Community /></RequireAuth>} />
           <Route path="/coach" element={<RequireAuth><Coach /></RequireAuth>} />
           <Route path="/profile/:id" element={<RequireAuth><Profile /></RequireAuth>} />

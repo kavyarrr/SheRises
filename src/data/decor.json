@@ -1,0 +1,17 @@
+[
+    {"id":1,"name":"Scented Soy Candles","price":"₹300","quantity":"Set of 2","business":"AuraHome Studio","description":"Hand-poured candles with lavender and vanilla aroma.","image":""},
+    {"id":2,"name":"Decorative Cushion Covers","price":"₹400","quantity":"Set of 2","business":"LoomNest","description":"Handwoven cotton cushion covers with ethnic prints.","image":""},
+    {"id":3,"name":"Indoor Plant Pots","price":"₹280","quantity":"Set of 3","business":"GreenGlow","description":"Eco-friendly clay pots with minimalist design.","image":""},
+    {"id":4,"name":"Macramé Curtain Tiebacks","price":"₹180","quantity":"Pair","business":"KnotKraft","description":"Bohemian macramé accessories for your curtains.","image":""},
+    {"id":5,"name":"Wall Mirror Frame","price":"₹600","quantity":"1 piece","business":"AuraHome Studio","description":"Hand-painted wooden frame with mirror.","image":""},
+    {"id":6,"name":"Table Runner","price":"₹320","quantity":"1 piece","business":"LoomNest","description":"Handloom cotton runner for dining tables.","image":""},
+    {"id":7,"name":"Clay Aroma Diffuser","price":"₹350","quantity":"1 piece","business":"EarthEcho","description":"Terracotta diffuser for essential oils.","image":""},
+    {"id":8,"name":"Resin Photo Frame","price":"₹400","quantity":"1 piece","business":"ShineMould","description":"Handcrafted resin frame with floral inlay.","image":""},
+    {"id":9,"name":"Fairy Light Jar","price":"₹250","quantity":"1 jar","business":"GlowCraft","description":"Glass jar decor with warm LED fairy lights.","image":""},
+    {"id":10,"name":"Dreamcatcher","price":"₹280","quantity":"1 piece","business":"ColorNest","description":"Handwoven dreamcatcher with feathers and beads.","image":""},
+    {"id":11,"name":"Fridge Magnets Set","price":"₹150","quantity":"Pack of 3","business":"CraftyCharm","description":"Cute handmade clay magnets.","image":""},
+    {"id":12,"name":"Wall Clock (Wooden)","price":"₹500","quantity":"1 piece","business":"WoodWaves","description":"Rustic handcrafted wooden wall clock.","image":""},
+    {"id":13,"name":"Wool Cushion","price":"₹350","quantity":"1 piece","business":"LoomNest","description":"Soft woolen cushion cover with tassels.","image":""},
+    {"id":14,"name":"Ceramic Flower Vase","price":"₹420","quantity":"1 piece","business":"ClayBloom","description":"Minimal ceramic vase for indoor decor.","image":""}
+  ]
+  

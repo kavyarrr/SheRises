@@ -1,0 +1,23 @@
+[
+    {"id":1,"name":"Homemade Chocolate Brownies","price":"₹250","quantity":"Box of 6","business":"SweetNest Bakery","description":"Rich, gooey brownies baked fresh daily.","image":""},
+    {"id":2,"name":"Cupcake Assortment Pack","price":"₹300","quantity":"Pack of 4","business":"ButterBloom Bakes","description":"Vanilla, chocolate, and red velvet cupcakes with buttercream frosting.","image":""},
+    {"id":3,"name":"Classic Plum Cake","price":"₹450","quantity":"500g","business":"BakeBelle","description":"Traditional plum cake made with soaked dry fruits.","image":""},
+    {"id":4,"name":"Organic Millet Cookies","price":"₹180","quantity":"200g","business":"HealthyMoms Kitchen","description":"Crispy cookies made from ragi and jaggery.","image":""},
+    {"id":5,"name":"Cheese Garlic Buns","price":"₹120","quantity":"Pack of 2","business":"Knead & Rise","description":"Soft buns with garlic butter and cheese filling.","image":""},
+    {"id":6,"name":"Homemade Pickle Trio","price":"₹300","quantity":"3 x 100g jars","business":"Ammamma’s Kitchen","description":"Mango, lemon, and chili pickles made with traditional recipes.","image":""},
+    {"id":7,"name":"Ghee Mysore Pak","price":"₹250","quantity":"250g","business":"Sugara Craft","description":"Rich South Indian sweet made with pure ghee.","image":""},
+    {"id":8,"name":"Dry Fruit Laddoos","price":"₹200","quantity":"Box of 8","business":"NutriNari","description":"Wholesome laddoos with almonds, dates, and jaggery.","image":""},
+    {"id":9,"name":"Banana Walnut Bread","price":"₹220","quantity":"1 loaf","business":"The Whisk Sisters","description":"Moist banana bread with crunchy walnuts.","image":""},
+    {"id":10,"name":"Spice Masala Box","price":"₹350","quantity":"Set of 6 spices","business":"Swaad by Seema","description":"Homemade blends of garam masala, rasam, and chai spice.","image":""},
+    {"id":11,"name":"Mini Puffs","price":"₹180","quantity":"Pack of 6","business":"BakeBites","description":"Flaky vegetable puffs baked golden brown.","image":""},
+    {"id":12,"name":"Coconut Barfi","price":"₹160","quantity":"200g","business":"TradTreats","description":"Soft coconut fudge with cardamom aroma.","image":""},
+    {"id":13,"name":"Savory Trail Mix","price":"₹150","quantity":"200g","business":"Snackify","description":"Healthy mix of roasted nuts and chickpeas.","image":""},
+    {"id":14,"name":"Artisan Bread Loaf","price":"₹180","quantity":"400g","business":"Daily Dough","description":"Freshly baked crusty sourdough loaf.","image":""},
+    {"id":15,"name":"Ragi Chocolate Cookies","price":"₹200","quantity":"200g","business":"MittiMoms","description":"Nutritious cookies made from ragi flour.","image":""},
+    {"id":16,"name":"Tea Cake Pack","price":"₹250","quantity":"Set of 4 slices","business":"CuppaCrumb","description":"Soft tea cakes in assorted flavors.","image":""},
+    {"id":17,"name":"Homemade Aam Papad","price":"₹120","quantity":"100g","business":"TangyTales","description":"Sun-dried mango rolls made from real pulp.","image":""},
+    {"id":18,"name":"Rose Syrup Concentrate","price":"₹180","quantity":"250ml","business":"FloralSip","description":"Natural rose syrup with no added color.","image":""},
+    {"id":19,"name":"Multigrain Energy Bars","price":"₹200","quantity":"Pack of 6","business":"PowerBites","description":"Healthy snack bars packed with oats and seeds.","image":""},
+    {"id":20,"name":"Homemade Tomato Sauce","price":"₹160","quantity":"250ml","business":"TasteCraft","description":"Fresh tomato sauce made from organic produce.","image":""}
+  ]
+  

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "name": "Homemade Chocolate Brownies",
+    "price": "₹250",
+    "quantity": "Box of 6",
+    "business": "SweetNest Bakery",
+    "description": "Rich, gooey brownies baked fresh daily.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 2,
+    "name": "Cupcake Assortment Pack",
+    "price": "₹300",
+    "quantity": "Pack of 4",
+    "business": "ButterBloom Bakes",
+    "description": "Vanilla, chocolate, and red velvet cupcakes with buttercream frosting.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 3,
+    "name": "Classic Plum Cake",
+    "price": "₹450",
+    "quantity": "500g",
+    "business": "BakeBelle",
+    "description": "Traditional plum cake made with soaked dry fruits.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 4,
+    "name": "Organic Millet Cookies",
+    "price": "₹180",
+    "quantity": "200g",
+    "business": "HealthyMoms Kitchen",
+    "description": "Crispy cookies made from ragi and jaggery.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 5,
+    "name": "Cheese Garlic Buns",
+    "price": "₹120",
+    "quantity": "Pack of 2",
+    "business": "Knead & Rise",
+    "description": "Soft buns with garlic butter and cheese filling.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 6,
+    "name": "Homemade Pickle Trio",
+    "price": "₹300",
+    "quantity": "3 x 100g jars",
+    "business": "Ammamma’s Kitchen",
+    "description": "Mango, lemon, and chili pickles made with traditional recipes.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 7,
+    "name": "Ghee Mysore Pak",
+    "price": "₹250",
+    "quantity": "250g",
+    "business": "Sugara Craft",
+    "description": "Rich South Indian sweet made with pure ghee.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 8,
+    "name": "Dry Fruit Laddoos",
+    "price": "₹200",
+    "quantity": "Box of 8",
+    "business": "NutriNari",
+    "description": "Wholesome laddoos with almonds, dates, and jaggery.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 9,
+    "name": "Banana Walnut Bread",
+    "price": "₹220",
+    "quantity": "1 loaf",
+    "business": "The Whisk Sisters",
+    "description": "Moist banana bread with crunchy walnuts.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 10,
+    "name": "Spice Masala Box",
+    "price": "₹350",
+    "quantity": "Set of 6 spices",
+    "business": "Swaad by Seema",
+    "description": "Homemade blends of garam masala, rasam, and chai spice.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 11,
+    "name": "Mini Puffs",
+    "price": "₹180",
+    "quantity": "Pack of 6",
+    "business": "BakeBites",
+    "description": "Flaky vegetable puffs baked golden brown.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 12,
+    "name": "Coconut Barfi",
+    "price": "₹160",
+    "quantity": "200g",
+    "business": "TradTreats",
+    "description": "Soft coconut fudge with cardamom aroma.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 13,
+    "name": "Savory Trail Mix",
+    "price": "₹150",
+    "quantity": "200g",
+    "business": "Snackify",
+    "description": "Healthy mix of roasted nuts and chickpeas.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 14,
+    "name": "Artisan Bread Loaf",
+    "price": "₹180",
+    "quantity": "400g",
+    "business": "Daily Dough",
+    "description": "Freshly baked crusty sourdough loaf.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 15,
+    "name": "Ragi Chocolate Cookies",
+    "price": "₹200",
+    "quantity": "200g",
+    "business": "MittiMoms",
+    "description": "Nutritious cookies made from ragi flour.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 16,
+    "name": "Tea Cake Pack",
+    "price": "₹250",
+    "quantity": "Set of 4 slices",
+    "business": "CuppaCrumb",
+    "description": "Soft tea cakes in assorted flavors.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 17,
+    "name": "Homemade Aam Papad",
+    "price": "₹120",
+    "quantity": "100g",
+    "business": "TangyTales",
+    "description": "Sun-dried mango rolls made from real pulp.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 18,
+    "name": "Rose Syrup Concentrate",
+    "price": "₹180",
+    "quantity": "250ml",
+    "business": "FloralSip",
+    "description": "Natural rose syrup with no added color.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 19,
+    "name": "Multigrain Energy Bars",
+    "price": "₹200",
+    "quantity": "Pack of 6",
+    "business": "PowerBites",
+    "description": "Healthy snack bars packed with oats and seeds.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 20,
+    "name": "Homemade Tomato Sauce",
+    "price": "₹160",
+    "quantity": "250ml",
+    "business": "TasteCraft",
+    "description": "Fresh tomato sauce made from organic produce.",
+    "image": "",
+    "category": "Food"
+  },
+  {
+    "id": 1,
+    "name": "Aloe Vera Gel",
+    "price": "₹180",
+    "quantity": "100ml",
+    "business": "GlowGrove Naturals",
+    "description": "Pure aloe vera gel for soothing and hydration.",
+    "image": "",
+    "category": "Beauty"
+  },
+  {
+    "id": 2,
+    "name": "Rose Lip Balm",
+    "price": "₹120",
+    "quantity": "15g",
+    "business": "PetalPop",
+    "description": "Handmade lip balm with rose oil and shea butter.",
+    "image": "",
+    "category": "Beauty"
+  },
+  {
+    "id": 3,
+    "name": "Turmeric Face Pack",
+    "price": "₹200",
+    "quantity": "100g",
+    "business": "AyuraBlend",
+    "description": "Natural face mask to brighten and even skin tone.",
+    "image": "",
+    "category": "Beauty"
+  },
+  {
+    "id": 4,
+    "name": "Coconut Hair Oil",
+    "price": "₹250",
+    "quantity": "200ml",
+    "business": "GlowGrove Naturals",
+    "description": "Cold-pressed coconut oil for hair nourishment.",
+    "image": "",
+    "category": "Beauty"
+  },
+  {
+    "id": 5,
+    "name": "Lavender Soap Bar",
+    "price": "₹150",
+    "quantity": "100g",
+    "business": "PureScents Studio",
+    "description": "Handcrafted soap infused with lavender essential oil.",
+    "image": "",
+    "category": "Beauty"
+  },
+  {
+    "id": 6,
+    "name": "Neem & Tulsi Face Wash",
+    "price": "₹220",
+    "quantity": "100ml",
+    "business": "AyuraBlend",
+    "description": "Herbal cleanser for acne-prone skin.",
+    "image": "",
+    "category": "Beauty"
+  },
+  {
+    "id": 7,
+    "name": "Coffee Body Scrub",
+    "price": "₹300",
+    "quantity": "200g",
+    "business": "BeanBloom Beauty",
+    "description": "Exfoliating scrub with natural coffee and coconut oil.",
+    "image": "",
+    "category": "Beauty"
+  },
+  {
+    "id": 8,
+    "name": "Rose Water Toner",
+    "price": "₹180",
+    "quantity": "100ml",
+    "business": "PetalPop",
+    "description": "Refreshing rose toner for all skin types.",
+    "image": "",
+    "category": "Beauty"
+  },
+  {
+    "id": 9,
+    "name": "Shea Butter Cream",
+    "price": "₹280",
+    "quantity": "100g",
+    "business": "PureScents Studio",
+    "description": "Moisturizing cream for dry skin with natural shea.",
+    "image": "",
+    "category": "Beauty"
+  },
+  {
+    "id": 10,
+    "name": "Amla Hair Serum",
+    "price": "₹320",
+    "quantity": "100ml",
+    "business": "GlowGrove Naturals",
+    "description": "Lightweight serum for shine and strength.",
+    "image": "",
+    "category": "Beauty"
+  },
+  {
+    "id": 1,
+    "name": "Handmade Jute Basket",
+    "price": "₹350",
+    "quantity": "1 piece",
+    "business": "ThreadTales Studio",
+    "description": "Eco-friendly jute basket for home storage.",
+    "image": "",
+    "category": "Crafts"
+  },
+  {
+    "id": 2,
+    "name": "Terracotta Clay Lamps",
+    "price": "₹280",
+    "quantity": "Set of 2",
+    "business": "EarthEcho",
+    "description": "Hand-painted traditional diyas made of clay.",
+    "image": "",
+    "category": "Crafts"
+  },
+  {
+    "id": 3,
+    "name": "Macramé Wall Hanging",
+    "price": "₹550",
+    "quantity": "1 piece",
+    "business": "KnotKraft",
+    "description": "Boho-style macramé wall art with cotton threads.",
+    "image": "",
+    "category": "Crafts"
+  },
+  {
+    "id": 4,
+    "name": "Crochet Coasters",
+    "price": "₹200",
+    "quantity": "Set of 4",
+    "business": "ThreadTales Studio",
+    "description": "Colorful crochet coasters handcrafted with care.",
+    "image": "",
+    "category": "Crafts"
+  },
+  {
+    "id": 5,
+    "name": "Paper Quilling Earrings",
+    "price": "₹180",
+    "quantity": "1 pair",
+    "business": "CraftyCharm",
+    "description": "Lightweight eco earrings made from rolled paper.",
+    "image": "",
+    "category": "Crafts"
+  },
+  {
+    "id": 6,
+    "name": "Bamboo Pen Stand",
+    "price": "₹220",
+    "quantity": "1 piece",
+    "business": "EarthEcho",
+    "description": "Sustainable bamboo pen holder handcrafted locally.",
+    "image": "",
+    "category": "Crafts"
+  },
+  {
+    "id": 7,
+    "name": "Resin Keychains",
+    "price": "₹150",
+    "quantity": "Pack of 2",
+    "business": "ShineMould",
+    "description": "Custom resin art keychains with pressed flowers.",
+    "image": "",
+    "category": "Crafts"
+  },
+  {
+    "id": 8,
+    "name": "Mini Canvas Painting",
+    "price": "₹250",
+    "quantity": "1 piece",
+    "business": "ColorNest",
+    "description": "Cute mini canvas artwork for desks or gifts.",
+    "image": "",
+    "category": "Crafts"
+  },
+  {
+    "id": 1,
+    "name": "Scented Soy Candles",
+    "price": "₹300",
+    "quantity": "Set of 2",
+    "business": "AuraHome Studio",
+    "description": "Hand-poured candles with lavender and vanilla aroma.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 2,
+    "name": "Decorative Cushion Covers",
+    "price": "₹400",
+    "quantity": "Set of 2",
+    "business": "LoomNest",
+    "description": "Handwoven cotton cushion covers with ethnic prints.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 3,
+    "name": "Indoor Plant Pots",
+    "price": "₹280",
+    "quantity": "Set of 3",
+    "business": "GreenGlow",
+    "description": "Eco-friendly clay pots with minimalist design.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 4,
+    "name": "Macramé Curtain Tiebacks",
+    "price": "₹180",
+    "quantity": "Pair",
+    "business": "KnotKraft",
+    "description": "Bohemian macramé accessories for your curtains.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 5,
+    "name": "Wall Mirror Frame",
+    "price": "₹600",
+    "quantity": "1 piece",
+    "business": "AuraHome Studio",
+    "description": "Hand-painted wooden frame with mirror.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 6,
+    "name": "Table Runner",
+    "price": "₹320",
+    "quantity": "1 piece",
+    "business": "LoomNest",
+    "description": "Handloom cotton runner for dining tables.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 7,
+    "name": "Clay Aroma Diffuser",
+    "price": "₹350",
+    "quantity": "1 piece",
+    "business": "EarthEcho",
+    "description": "Terracotta diffuser for essential oils.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 8,
+    "name": "Resin Photo Frame",
+    "price": "₹400",
+    "quantity": "1 piece",
+    "business": "ShineMould",
+    "description": "Handcrafted resin frame with floral inlay.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 9,
+    "name": "Fairy Light Jar",
+    "price": "₹250",
+    "quantity": "1 jar",
+    "business": "GlowCraft",
+    "description": "Glass jar decor with warm LED fairy lights.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 10,
+    "name": "Dreamcatcher",
+    "price": "₹280",
+    "quantity": "1 piece",
+    "business": "ColorNest",
+    "description": "Handwoven dreamcatcher with feathers and beads.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 11,
+    "name": "Fridge Magnets Set",
+    "price": "₹150",
+    "quantity": "Pack of 3",
+    "business": "CraftyCharm",
+    "description": "Cute handmade clay magnets.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 12,
+    "name": "Wall Clock (Wooden)",
+    "price": "₹500",
+    "quantity": "1 piece",
+    "business": "WoodWaves",
+    "description": "Rustic handcrafted wooden wall clock.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 13,
+    "name": "Wool Cushion",
+    "price": "₹350",
+    "quantity": "1 piece",
+    "business": "LoomNest",
+    "description": "Soft woolen cushion cover with tassels.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 14,
+    "name": "Ceramic Flower Vase",
+    "price": "₹420",
+    "quantity": "1 piece",
+    "business": "ClayBloom",
+    "description": "Minimal ceramic vase for indoor decor.",
+    "image": "",
+    "category": "Decor"
+  },
+  {
+    "id": 1,
+    "name": "Handwoven Cotton Saree",
+    "price": "₹1200",
+    "quantity": "1 piece",
+    "business": "LoomLadki",
+    "description": "Elegant saree handwoven by rural artisans.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 2,
+    "name": "Block Printed Kurti",
+    "price": "₹800",
+    "quantity": "1 piece",
+    "business": "RangRiwaaz",
+    "description": "Cotton kurti with traditional block prints.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 3,
+    "name": "Beaded Necklace Set",
+    "price": "₹450",
+    "quantity": "1 set",
+    "business": "CraftyCharm",
+    "description": "Colorful bead jewelry handmade by women.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 4,
+    "name": "Jute Handbag",
+    "price": "₹600",
+    "quantity": "1 bag",
+    "business": "EcoBelle",
+    "description": "Sustainable tote bag made from jute fabric.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 5,
+    "name": "Silk Dupatta",
+    "price": "₹950",
+    "quantity": "1 piece",
+    "business": "RangRiwaaz",
+    "description": "Hand-dyed silk dupatta with zari borders.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 6,
+    "name": "Cotton Wrap Skirt",
+    "price": "₹700",
+    "quantity": "1 piece",
+    "business": "ThreadTales Studio",
+    "description": "Casual wrap skirt with floral motifs.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 7,
+    "name": "Silver Toe Rings",
+    "price": "₹300",
+    "quantity": "Pair",
+    "business": "JewelNest",
+    "description": "Traditional handcrafted silver jewelry.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 8,
+    "name": "Handmade Hairbands",
+    "price": "₹180",
+    "quantity": "Set of 2",
+    "business": "StitchBloom",
+    "description": "Fabric hairbands with bow design.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 9,
+    "name": "Crochet Earrings",
+    "price": "₹200",
+    "quantity": "1 pair",
+    "business": "KnotKraft",
+    "description": "Light handmade earrings from crochet threads.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 10,
+    "name": "Ethnic Potli Bags",
+    "price": "₹350",
+    "quantity": "1 piece",
+    "business": "EcoBelle",
+    "description": "Festive potli bags with mirror work.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 11,
+    "name": "Printed Cotton Dress",
+    "price": "₹950",
+    "quantity": "1 piece",
+    "business": "LoomLadki",
+    "description": "Flowy dress made from organic cotton.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 12,
+    "name": "Anklet Set",
+    "price": "₹280",
+    "quantity": "Pair",
+    "business": "JewelNest",
+    "description": "Delicate oxidized anklets with charms.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 13,
+    "name": "Woolen Shawl",
+    "price": "₹1100",
+    "quantity": "1 piece",
+    "business": "LoomLadki",
+    "description": "Soft handwoven shawl for winters.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 14,
+    "name": "Denim Sling Bag",
+    "price": "₹550",
+    "quantity": "1 piece",
+    "business": "StitchBloom",
+    "description": "Upcycled denim sling bag with patch design.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 15,
+    "name": "Terracotta Necklace",
+    "price": "₹400",
+    "quantity": "1 piece",
+    "business": "CraftyCharm",
+    "description": "Hand-painted terracotta jewelry.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 16,
+    "name": "Cotton Dupatta Set",
+    "price": "₹700",
+    "quantity": "1 piece",
+    "business": "RangRiwaaz",
+    "description": "Soft cotton dupatta in pastel shades.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 17,
+    "name": "Fabric Earrings",
+    "price": "₹150",
+    "quantity": "1 pair",
+    "business": "StitchBloom",
+    "description": "Colorful earrings made from fabric scraps.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 18,
+    "name": "Hand-painted Scarf",
+    "price": "₹600",
+    "quantity": "1 piece",
+    "business": "ColorNest",
+    "description": "Light scarf with hand-painted floral art.",
+    "image": "",
+    "category": "Fashion"
+  },
+  {
+    "id": 1,
+    "name": "Herbal Green Tea Blend",
+    "price": "₹300",
+    "quantity": "100g",
+    "business": "TeaLeaf Tales",
+    "description": "Relaxing tea mix with tulsi and lemongrass.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 2,
+    "name": "Aromatherapy Candle",
+    "price": "₹350",
+    "quantity": "1 jar",
+    "business": "AuraHome Studio",
+    "description": "Scented candle to calm and uplift mood.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 3,
+    "name": "Yoga Mat Cleaner Spray",
+    "price": "₹200",
+    "quantity": "100ml",
+    "business": "WellNest",
+    "description": "Natural antibacterial spray for yoga mats.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 4,
+    "name": "Sleep Pillow Mist",
+    "price": "₹280",
+    "quantity": "50ml",
+    "business": "CalmCraft",
+    "description": "Lavender mist to promote restful sleep.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 5,
+    "name": "Herbal Bath Salts",
+    "price": "₹250",
+    "quantity": "200g",
+    "business": "PureScents Studio",
+    "description": "Soothing Epsom salt mix with essential oils.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 6,
+    "name": "Copper Water Bottle",
+    "price": "₹800",
+    "quantity": "1 piece",
+    "business": "EcoBelle",
+    "description": "Pure copper bottle for daily wellness routine.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 7,
+    "name": "Chamomile Tea",
+    "price": "₹280",
+    "quantity": "50g",
+    "business": "TeaLeaf Tales",
+    "description": "Organic chamomile flowers for relaxation.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 8,
+    "name": "Aloe Vera Juice",
+    "price": "₹200",
+    "quantity": "500ml",
+    "business": "NutriNari",
+    "description": "Cold-pressed aloe juice for digestion and skin.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 9,
+    "name": "Body Massage Oil",
+    "price": "₹350",
+    "quantity": "100ml",
+    "business": "AyuraBlend",
+    "description": "Blend of almond and sandalwood oils.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 10,
+    "name": "Scented Eye Pillow",
+    "price": "₹300",
+    "quantity": "1 piece",
+    "business": "CalmCraft",
+    "description": "Lavender-filled eye pillow for stress relief.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 11,
+    "name": "Green Clay Mask",
+    "price": "₹220",
+    "quantity": "100g",
+    "business": "The Clay Bar",
+    "description": "Mineral-rich mask for detox and glow.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 12,
+    "name": "Organic Honey",
+    "price": "₹400",
+    "quantity": "250g",
+    "business": "BeeBloom Farms",
+    "description": "Raw, unfiltered honey harvested locally.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 13,
+    "name": "Herbal Detox Pack",
+    "price": "₹350",
+    "quantity": "3 sachets",
+    "business": "WellNest",
+    "description": "Daily detox kit with herbs and teas.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 14,
+    "name": "Lemongrass Essential Oil",
+    "price": "₹180",
+    "quantity": "15ml",
+    "business": "PureScents Studio",
+    "description": "Essential oil for aromatherapy and massage.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 15,
+    "name": "Yoga Headband Set",
+    "price": "₹250",
+    "quantity": "Set of 2",
+    "business": "StitchBloom",
+    "description": "Soft cotton stretch bands for workouts.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 16,
+    "name": "Herbal Foot Soak",
+    "price": "₹220",
+    "quantity": "150g",
+    "business": "CalmCraft",
+    "description": "Relaxing soak with Epsom salt and mint leaves.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 17,
+    "name": "Copper Tongue Cleaner",
+    "price": "₹150",
+    "quantity": "1 piece",
+    "business": "EcoBelle",
+    "description": "Traditional tongue cleaner made from pure copper.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 18,
+    "name": "Organic Chia Seeds",
+    "price": "₹180",
+    "quantity": "200g",
+    "business": "NutriNari",
+    "description": "High-protein superfood for healthy meals.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 19,
+    "name": "Stress Relief Balm",
+    "price": "₹200",
+    "quantity": "25g",
+    "business": "AyuraBlend",
+    "description": "Herbal balm with eucalyptus and menthol.",
+    "image": "",
+    "category": "Wellness"
+  },
+  {
+    "id": 20,
+    "name": "Flaxseed Energy Mix",
+    "price": "₹300",
+    "quantity": "200g",
+    "business": "NutriNari",
+    "description": "Healthy mix of flax, sunflower, and chia seeds.",
+    "image": "",
+    "category": "Wellness"
+  }
+]
